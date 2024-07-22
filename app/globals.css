@@ -63,7 +63,14 @@
   * {
     @apply border-border;
   }
+
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .overlay {
+    @apply before:content-[''] before:absolute before:inset-0 before:block before:bg-gradient-to-r before:from-[#103b38] before:z-[-5];
   }
 }

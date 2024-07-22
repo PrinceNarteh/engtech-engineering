@@ -29,7 +29,7 @@ const Navbar = () => {
 
   return (
     <div className="py-5 px-20">
-      <nav className="h-20 flex justify-between">
+      <nav className="h-11 flex justify-between items-center">
         <div className="flex gap-2">
           <Image
             src="/images/logo.png"
@@ -40,7 +40,7 @@ const Navbar = () => {
           />
           <h3 className="font-bold leading-5 text-2xl">
             <span className="text-orange-500">EngTech</span> <br />
-            <span>Engineering</span>
+            <span className="text-[#103b38]">Engineering</span>
           </h3>
         </div>
         <ul className="flex gap-5">

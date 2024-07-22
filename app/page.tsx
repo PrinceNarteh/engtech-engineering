@@ -1,3 +1,9 @@
+import { Hero } from "@/components/hero";
+
 export default function Home() {
-  return <h1>EngTech Engineering</h1>;
+  return (
+    <>
+      <Hero />
+    </>
+  );
 }
