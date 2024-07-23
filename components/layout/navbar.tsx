@@ -31,7 +31,7 @@ const links = [
   },
   {
     label: "About Us",
-    path: "/about-us",
+    path: "/about",
   },
   {
     label: "Contact",
@@ -43,7 +43,7 @@ const Navbar = () => {
   const pathname = usePathname();
 
   return (
-    <div className="py-5 px-10 lg:px-20">
+    <div className="py-5 px-7 md:px-10 lg:px-20">
       <nav className="h-11 flex justify-between items-center">
         <Link href="/" className="flex gap-2">
           <Image
@@ -62,7 +62,11 @@ const Navbar = () => {
         <div>
           <Sheet>
             <SheetTrigger className="block md:hidden" asChild>
-              <Button variant="outline" size="icon">
+              <Button
+                variant="outline"
+                size="icon"
+                className="flex justify-center items-center"
+              >
                 <Menu />
               </Button>
             </SheetTrigger>
