@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={cn("font-archivo", fontSans.variable)}>
+      <body className={cn("font-archivo", fontSans.className)}>
         <Navbar />
         {children}
       </body>
