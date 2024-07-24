@@ -6,7 +6,7 @@ interface HeadingTitleProps {
 
 export const HeadingTitle = ({ text }: HeadingTitleProps) => {
   return (
-    <h3 className="uppercase tracking-widest text-xl font-semibold text-[#f7b550]">
+    <h3 className="uppercase font-bold tracking-widest text-xl text-[#f7b550]">
       {text}
     </h3>
   );
