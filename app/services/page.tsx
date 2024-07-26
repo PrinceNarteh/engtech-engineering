@@ -1,42 +1,11 @@
+import React from "react";
 import Banner from "@/components/banner";
 import { HeadingTitle } from "@/components/heading-title";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardFooter } from "@/components/ui/card";
+import { services } from "@/data";
 import Image from "next/image";
-import React from "react";
-
-const services = [
-  {
-    title: "Installing fuel dispensers",
-    content:
-      "We specialize in the installation of top-of-the-line fuel dispensers to ensure efficient and reliable fueling solutions for your business.",
-    icon: "/icons/pump.png",
-  },
-  {
-    title: "Installation of petroleum underground pipelines",
-    content:
-      "Our team of experts is experienced in installing underground pipelines with precision and care to ensure safety and efficiency.",
-    icon: "/icons/pipe.png",
-  },
-  {
-    title: "Installation of surface tanks",
-    content:
-      "We offer professional installation services for surface tanks to store petroleum products securely.",
-    icon: "/icons/tank.png",
-  },
-  {
-    title: "Repairing and maintenance of fuel dispensers",
-    content:
-      "Our skilled technicians are available to provide prompt and efficient repair and maintenance services for your fuel dispensers to keep your operations running smoothly.",
-    icon: "/icons/tools.png",
-  },
-  {
-    title: "Electrical installation",
-    content:
-      "We also offer electrical installation services to ensure that all your engineering systems are properly connected and functioning optimally.",
-    icon: "/icons/plug.png",
-  },
-];
+import Link from "next/link";
 
 const ServicePage = () => {
   return (
@@ -69,10 +38,12 @@ const ServicePage = () => {
                   <h3 className="text-2xl font-semibold h-[65px] flex items-center justify-center">
                     {service.title}
                   </h3>
-                  <p className="text-lg line-clamp-2">{service.content}</p>
-                  <Button variant="ghost" className="font-bold text-gray-500">
-                    READ MORE
-                  </Button>
+                  <p className="text-lg line-clamp-2">{service.overview}</p>
+                  <Link href="/services/1" className="mt-5 block">
+                    <Button variant="ghost" className="font-bold text-gray-500">
+                      READ MORE
+                    </Button>
+                  </Link>
                 </div>
               </div>
             </div>
