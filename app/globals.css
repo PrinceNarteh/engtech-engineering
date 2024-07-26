@@ -73,4 +73,8 @@
   .overlay {
     @apply before:content-[''] before:absolute before:inset-0 before:block before:bg-[#103b38]/85 before:z-[-5];
   }
+
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
 }
