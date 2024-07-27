@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import Navbar from "@/components/layout/navbar";
+import { Footer } from "@/components/footer";
 
 const fontSans = localFont({
   src: [
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className={cn("font-archivo", fontSans.className)}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

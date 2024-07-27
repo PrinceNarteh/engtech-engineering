@@ -1,3 +1,26 @@
+export const links = [
+  {
+    label: "Home",
+    path: "/",
+  },
+  {
+    label: "Services",
+    path: "/services",
+  },
+  {
+    label: "Projects",
+    path: "/projects",
+  },
+  {
+    label: "About Us",
+    path: "/about",
+  },
+  {
+    label: "Contact",
+    path: "/contact",
+  },
+];
+
 export const services = [
   {
     title: "Installing Fuel Dispensers",

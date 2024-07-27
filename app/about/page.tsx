@@ -28,13 +28,11 @@ const AboutUsPage = () => {
           </h2>
           <p className="text-xl w-11/12 text-gray-600">
             Engtech Engineering Services is a leading provider of engineering
-            solutions, specializing in the installation of fuel dispensers,
-            petroleum underground pipelines, surface tanks, repairing and
-            maintenance of fuel dispensers, and electrical installation. With a
-            team of experienced professionals, we are committed to delivering
-            high-quality services tailored to meet your specific needs.
+            solutions. With a team of experienced professionals, we are
+            committed to delivering high-quality services tailored to meet your
+            specific needs. We are specialized in:
           </p>
-          <div className="flex flex-wrap gap-3 pl-10">
+          <div className="flex flex-wrap gap-3 pl-5 lg:pl-10">
             {services.map((service, idx) => (
               <div
                 key={idx}

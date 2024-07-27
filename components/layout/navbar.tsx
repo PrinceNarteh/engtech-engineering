@@ -15,29 +15,7 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
-
-const links = [
-  {
-    label: "Home",
-    path: "/",
-  },
-  {
-    label: "Services",
-    path: "/services",
-  },
-  {
-    label: "Projects",
-    path: "/projects",
-  },
-  {
-    label: "About Us",
-    path: "/about",
-  },
-  {
-    label: "Contact",
-    path: "/contact",
-  },
-];
+import { links } from "@/data";
 
 const Navbar = () => {
   const pathname = usePathname();
