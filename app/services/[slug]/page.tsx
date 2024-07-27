@@ -3,7 +3,7 @@
 import Banner from "@/components/banner";
 import { services } from "@/data";
 import slugify from "@/lib/slugify";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Asterisk } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useParams } from "next/navigation";
@@ -18,22 +18,18 @@ const ServiceDetails = () => {
       <div>
         <h2>Service not found</h2>
       </div>
-    )
+    );
   }
 
   return (
     <div>
-      <Banner
-        image="/images/hero.jpg"
-        heading={service.title}
-        subHeading="This is the service details page"
-      />
+      <Banner image={service.image} heading={service.title} subHeading="" />
       <section className="flex gap-5 py-20 px-5 md:px-10 lg:px-20">
         <div className="flex-[3]">
           <div className="flex gap-5">
             <div className="flex-1">
               <Image
-                src="/images/hero.jpg"
+                src={service.image}
                 width="400"
                 height="200"
                 alt=""
@@ -44,8 +40,27 @@ const ServiceDetails = () => {
               <p className="text-2xl text-gray-700">{service?.overview}</p>
             </div>
           </div>
-          <div>
-            <h3 className="text-2xl font-bold">Scope of Work</h3>
+          <div className="mt-5">
+            <h3 className="text-2xl font-bold mb-2">Scope of Work</h3>
+            <div className="pl-5 space-y-1">
+              {service.scope.map((scope, idx) => (
+                <p key={idx} className="text-xl flex items-center gap-2">
+                  <Asterisk size={15} className="text-orange-500" />
+                  {scope}
+                </p>
+              ))}
+            </div>
+          </div>
+          <div className="mt-5">
+            <h3 className="text-2xl font-bold mb-2">Benefits</h3>
+            <div className="pl-5 space-y-1">
+              {service.benefits.map((benefit, idx) => (
+                <p key={idx} className="text-xl flex items-center gap-2">
+                  <Asterisk size={15} className="text-orange-500" />
+                  {benefit}
+                </p>
+              ))}
+            </div>
           </div>
         </div>
         <div className="flex-[2]">

@@ -13,7 +13,7 @@ const Banner = ({ image, heading, subHeading }: BannerProps) => {
       style={{ backgroundImage: `url(${image})` }}
     >
       <div className="h-full text-white flex flex-col justify-center px-7 md:px-10 lg:px-20">
-        <h2 className="text-6xl font-bold mb-5">{heading}</h2>
+        <h2 className="text-6xl font-bold mb-5 lg:w-10/12">{heading}</h2>
         <p className="text-xl tracking-wider w-11/12 md:w-8/12 lg:w-6/12">
           {subHeading}
         </p>
