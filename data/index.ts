@@ -2,6 +2,7 @@ export const services = [
   {
     title: "Installing Fuel Dispensers",
     icon: "/icons/pump.png",
+    image: "/images/repair.jpg",
     overview:
       "Our team specializes in the professional installation of fuel dispensers tailored to meet the unique needs of your business. We ensure that all dispensers are installed safely, efficiently, and in compliance with industry regulations.",
     scope: [
@@ -21,6 +22,7 @@ export const services = [
   {
     title: "Installation of Petroleum Underground Pipelines",
     icon: "/icons/pipe.png",
+    image: "/images/repair.jpg",
     overview:
       "We offer expert installation services for underground petroleum pipelines, ensuring safe and efficient transport of fuel products while adhering to environmental and safety regulations.",
     scope: [
@@ -40,6 +42,7 @@ export const services = [
   {
     title: "Installation of Surface Tanks",
     icon: "/icons/tank.png",
+    image: "/images/surface-tank.jpg",
     overview:
       "Our surface tank installation services provide businesses with secure and efficient storage solutions for petroleum products.We handle all aspects of the installation process to ensure optimal performance.",
 
@@ -60,6 +63,7 @@ export const services = [
   {
     title: "Repairing and Maintenance of Fuel Dispensers",
     icon: "/icons/tools.png",
+    image: "/images/repair.jpg",
     overview:
       "Our repair and maintenance services for fuel dispensers ensure that your equipment operates at peak efficiency.Regular maintenance helps prevent costly downtime and extends the life of your dispensers.",
 
@@ -81,6 +85,7 @@ export const services = [
   {
     title: "Electrical Installation",
     icon: "/icons/plug.png",
+    image: "/images/repair.jpg",
     overview:
       "We provide professional electrical installation services tailored to the specific needs of fueling stations and petroleum facilities.Our licensed electricians ensure that all installations meet safety codes and operational requirements.",
 

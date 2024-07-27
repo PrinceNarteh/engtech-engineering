@@ -6,6 +6,7 @@ import { Card, CardContent, CardFooter } from "@/components/ui/card";
 import { services } from "@/data";
 import Image from "next/image";
 import Link from "next/link";
+import slugify from "@/lib/slugify";
 
 const ServicePage = () => {
   return (
@@ -22,7 +23,7 @@ const ServicePage = () => {
               className="w-96 h-[570px] bg-red-500 rounded-2xl overflow-hidden"
             >
               <Image
-                src="/images/hero.jpg"
+                src={service.image}
                 alt=""
                 height="270"
                 width="200"
@@ -39,7 +40,10 @@ const ServicePage = () => {
                     {service.title}
                   </h3>
                   <p className="text-lg line-clamp-2">{service.overview}</p>
-                  <Link href="/services/1" className="mt-5 block">
+                  <Link
+                    href={`/services/${slugify(service.title)}`}
+                    className="mt-5 block"
+                  >
                     <Button variant="ghost" className="font-bold text-gray-500">
                       READ MORE
                     </Button>
