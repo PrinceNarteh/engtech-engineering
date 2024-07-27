@@ -23,10 +23,14 @@ const ServiceDetails = () => {
 
   return (
     <div>
-      <Banner image={service.image} heading={service.title} subHeading="" />
-      <section className="flex gap-5 py-20 px-5 md:px-10 lg:px-20">
+      <Banner
+        image={service.image}
+        heading={service.title}
+        subHeading={service.subHeading}
+      />
+      <section className="flex flex-col lg:flex-row gap-x-5 gap-y-10 py-20 px-5 md:px-10 lg:px-20">
         <div className="flex-[3]">
-          <div className="flex gap-5">
+          <div className="flex flex-col md:flex-row gap-5">
             <div className="flex-1">
               <Image
                 src={service.image}
@@ -44,8 +48,11 @@ const ServiceDetails = () => {
             <h3 className="text-2xl font-bold mb-2">Scope of Work</h3>
             <div className="pl-5 space-y-1">
               {service.scope.map((scope, idx) => (
-                <p key={idx} className="text-xl flex items-center gap-2">
-                  <Asterisk size={15} className="text-orange-500" />
+                <p key={idx} className="text-xl flex items-start gap-2">
+                  <Asterisk
+                    size={15}
+                    className="text-orange-500 shrink-0 mt-1.5"
+                  />
                   {scope}
                 </p>
               ))}
@@ -55,8 +62,11 @@ const ServiceDetails = () => {
             <h3 className="text-2xl font-bold mb-2">Benefits</h3>
             <div className="pl-5 space-y-1">
               {service.benefits.map((benefit, idx) => (
-                <p key={idx} className="text-xl flex items-center gap-2">
-                  <Asterisk size={15} className="text-orange-500" />
+                <p key={idx} className="text-xl flex items-start gap-2">
+                  <Asterisk
+                    size={15}
+                    className="text-orange-500 shrink-0 mt-1.5"
+                  />
                   {benefit}
                 </p>
               ))}

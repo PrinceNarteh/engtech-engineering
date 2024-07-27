@@ -1,6 +1,8 @@
 export const services = [
   {
     title: "Installing Fuel Dispensers",
+    subHeading:
+      "Expert installation for reliable and efficient fuel dispensing solutions.",
     icon: "/icons/pump.png",
     image: "/images/fuel-dispenser.jpg",
     overview:
@@ -21,6 +23,8 @@ export const services = [
   },
   {
     title: "Installation of Petroleum Underground Pipelines",
+    subHeading:
+      "Safe and compliant underground pipeline installations for seamless fuel transport.",
     icon: "/icons/pipe.png",
     image: "/images/underground-pipes.jpg",
     overview:
@@ -41,6 +45,8 @@ export const services = [
   },
   {
     title: "Installation of Surface Tanks",
+    subHeading:
+      "Secure and efficient surface tank installations tailored to your storage needs.",
     icon: "/icons/tank.png",
     image: "/images/surface-tank.jpg",
     overview:
@@ -62,6 +68,8 @@ export const services = [
   },
   {
     title: "Repairing and Maintenance of Fuel Dispensers",
+    subHeading:
+      "Comprehensive repair and maintenance services to keep your dispensers running smoothly.",
     icon: "/icons/tools.png",
     image: "/images/fuel-dispenser-repairs.jpg",
     overview:
@@ -84,6 +92,8 @@ export const services = [
   },
   {
     title: "Electrical Installation",
+    subHeading:
+      "Professional electrical installations ensuring safety and optimal performance for your fueling operations.",
     icon: "/icons/plug.png",
     image: "/images/electrical-repairs.jpg",
     overview:
