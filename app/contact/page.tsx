@@ -16,7 +16,7 @@ const ContactPage = () => {
         <div className="flex-1 space-y-5">
           <HeadingTitle text="GET IN TOUCH" />
           <h2 className="text-3xl md:text-4xl lg:text-5xl w-10/12">
-            Let's Discuss Your Engineering Needs
+            Let&apos;s Discuss Your Engineering Needs
           </h2>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias quam
