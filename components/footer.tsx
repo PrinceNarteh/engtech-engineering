@@ -36,12 +36,8 @@ export const Footer = () => {
             petroleum underground pipelines, surface tanks, repairing and
             maintenance of fuel dispensers, and electrical installation.
           </p>
-          <div className="flex items-center gap-5">
-            <Facebook />
-            <Instagram />
-          </div>
         </div>
-        <div className="flex-[2] flex gap-5">
+        <div className="flex-[2] flex flex-col md:flex-row gap-5">
           <div className="flex-1">
             <h3 className="text-orange-500 font-bold tracking-widest text-xl">
               USEFUL LINKS
@@ -65,7 +61,7 @@ export const Footer = () => {
               CONTACT
             </h3>
 
-            <div className="space-y-3 pl-5">
+            <div className="space-y-4 pl-5">
               <div className="flex items-center gap-3 mt-5">
                 <div className="bg-orange-500 rounded-full size-7 flex-center text-white">
                   <MapPin size={15} />
@@ -86,6 +82,10 @@ export const Footer = () => {
                   <Mail size={15} />
                 </div>
                 <span className="text-xl">tettbroni@yahoo.com</span>
+              </div>
+              <div className="flex items-center gap-5 pl-10">
+                <Facebook />
+                <Instagram />
               </div>
             </div>
           </div>
