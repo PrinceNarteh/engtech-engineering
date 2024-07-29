@@ -23,11 +23,11 @@ export default function Home() {
             className="bg-gray-100 flex gap-2 border p-5 rounded-full items-center w-fit"
           >
             <CircleCheck className="text-orange-500 shrink-0" />
-            <span className="text-2xl">{service.title}</span>
+            <span className="text-xl md:text-2xl">{service.title}</span>
           </div>
         ))}
       </section>
-      <section className="flex flex-col md:flex-row py-20 px-10 lg:px-20 bg-gray-100">
+      <section className="flex flex-col lg:flex-row py-28 px-10 lg:px-20 bg-gray-100 gap-y-10">
         <div className="flex-1 space-y-5">
           <HeadingTitle text="About us" />
           <h2 className="text-4xl font-semibold">
@@ -51,10 +51,10 @@ export default function Home() {
             ))}
           </div>
           <p className="border-l-2 border-l-orange-500 pl-5 italic">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure,
-            deleniti. Nam voluptas adipisci, et amet quibusdam perspiciatis
-            saepe fugit maiores architecto vitae laudantium qui soluta numquam
-            ad! Numquam, nisi saepe.
+            At Engtech Engineering Services, we are committed to delivering
+            high-quality engineering solutions tailored to meet your specific
+            requirements. Contact us today to learn more about how we can help
+            you with your engineering needs.
           </p>
           <Button size="lg">READ MORE</Button>
         </div>
@@ -63,10 +63,51 @@ export default function Home() {
             <Image
               src="/images/hero.jpg"
               width="200"
-              height="400"
+              height="800"
               alt=""
               className="w-full h-full object-cover rounded-2xl"
             />
+          </div>
+        </div>
+      </section>
+      <section className="flex flex-col md:flex-row py-28 px-10 lg:px-20">
+        <div className="flex-1">
+          <div className="md:w-10/12 mx-auto h-full justify-self-end relative">
+            <Image
+              src="/images/hero.jpg"
+              width="200"
+              height="800"
+              alt=""
+              className="w-full h-full object-cover rounded-2xl"
+            />
+          </div>
+        </div>
+        <div className="flex-1">
+          <div className="flex-1 space-y-7">
+            <HeadingTitle text="OUR VALUE" />
+            <h2 className="text-5xl font-semibold">
+              Pioneering Exellence in Engineering Services
+            </h2>
+            <div className="flex gap-5 text-gray-600">
+              <div className="shrink-0 size-14 rounded-full bg-orange-500"></div>
+              <div>
+                <h4 className="text-3xl font-semibold">Our Mission</h4>
+                <p className="text-xl">
+                  To deliver innovative and reliable engineering solutions that
+                  enhance operational efficiency and safety for our clients.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-5 text-gray-600">
+              <div className="shrink-0 size-14 rounded-full bg-orange-500"></div>
+              <div>
+                <h4 className="text-3xl font-semibold">Our Vision</h4>
+                <p className="text-xl">
+                  To be the preferred engineering service provider recognized
+                  for our quality, integrity, and dedication to excellence
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
