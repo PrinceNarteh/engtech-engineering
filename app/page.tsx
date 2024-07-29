@@ -2,7 +2,7 @@ import { HeadingTitle } from "@/components/heading-title";
 import { Hero } from "@/components/hero";
 import { Button } from "@/components/ui/button";
 import { services } from "@/data";
-import { CircleCheck } from "lucide-react";
+import { CircleCheck, Lightbulb, Zap } from "lucide-react";
 import Image from "next/image";
 
 const about = [
@@ -16,14 +16,16 @@ export default function Home() {
   return (
     <>
       <Hero />
-      <section className="flex flex-wrap gap-5 justify-center py-10 px-5">
+      <section className="flex flex-wrap gap-5 md:gap-10 justify-center py-20 px-5">
         {services.map((service, idx) => (
           <div
             key={idx}
             className="bg-gray-100 flex gap-2 border p-5 rounded-full items-center w-fit"
           >
             <CircleCheck className="text-orange-500 shrink-0" />
-            <span className="text-xl md:text-2xl">{service.title}</span>
+            <span className="text-xl md:text-2xl font-semibold text-gray-700">
+              {service.title}
+            </span>
           </div>
         ))}
       </section>
@@ -70,8 +72,8 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="flex flex-col md:flex-row py-28 px-10 lg:px-20">
-        <div className="flex-1">
+      <section className="flex flex-col md:flex-row py-28 px-10 gap-10 lg:px-20">
+        <div className="flex-1 order-1">
           <div className="md:w-10/12 mx-auto h-full justify-self-end relative">
             <Image
               src="/images/hero.jpg"
@@ -89,7 +91,9 @@ export default function Home() {
               Pioneering Exellence in Engineering Services
             </h2>
             <div className="flex gap-5 text-gray-600">
-              <div className="shrink-0 size-14 rounded-full bg-orange-500"></div>
+              <div className="shrink-0 size-14 rounded-full bg-orange-500 flex-center">
+                <Lightbulb size={30} />
+              </div>
               <div>
                 <h4 className="text-3xl font-semibold">Our Mission</h4>
                 <p className="text-xl">
@@ -99,7 +103,9 @@ export default function Home() {
               </div>
             </div>
             <div className="flex gap-5 text-gray-600">
-              <div className="shrink-0 size-14 rounded-full bg-orange-500"></div>
+              <div className="shrink-0 size-14 rounded-full bg-orange-500 flex-center">
+                <Zap size={30} />
+              </div>
               <div>
                 <h4 className="text-3xl font-semibold">Our Vision</h4>
                 <p className="text-xl">
@@ -111,6 +117,7 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section></section>
     </>
   );
 }

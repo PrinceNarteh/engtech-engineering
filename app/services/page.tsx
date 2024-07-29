@@ -12,15 +12,15 @@ const ServicePage = () => {
   return (
     <div>
       <Banner image="/images/hero.jpg" heading="Servies" subHeading="Hello" />
-      <section className="py-20 px-20">
+      <section className="py-20 px-5 lg:px-20">
         <h3 className="text-4xl text-center font-bold text-gray-500 mb-14">
           Fulfilling Engineering Solutions for a Bright Future
         </h3>
-        <div className="flex flex-wrap justify-center gap-7">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="w-96 h-[570px] bg-red-500 rounded-2xl overflow-hidden"
+              className="min-w-[360px] h-[570px] bg-red-500 rounded-2xl overflow-hidden"
             >
               <Image
                 src={service.image}
