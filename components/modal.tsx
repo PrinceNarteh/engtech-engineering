@@ -59,6 +59,9 @@ export const Modal = ({ images, isOpen, closeModal }: ModalProps) => {
             </Button>
           </div>
         </div>
+        <p className="absolute w-full bg-white/30 text-center backdrop-blur-sm left-0 bottom-5 text-white font-semibold">
+          Slide {index + 1} of {images.length}
+        </p>
       </div>
     </div>
   );
