@@ -27,6 +27,7 @@ export const ProjectCard = ({
           "relative rounded-2xl flex-1 h-[460px] overflow-hidden group",
           className
         )}
+        onClick={() => setIsOpen(true)}
       >
         <Image
           src={images[0]}
@@ -42,7 +43,7 @@ export const ProjectCard = ({
           </p>
         </div>
       </div>
-      <Modal images={images} />
+      <Modal images={images} isOpen={isOpen} closeModal={setIsOpen} />
     </>
   );
 };
