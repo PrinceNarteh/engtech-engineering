@@ -1,8 +1,16 @@
 import Banner from "@/components/banner";
 import { HeadingTitle } from "@/components/heading-title";
-import { ProjectCard } from "@/components/ProjectCard";
-import Image from "next/image";
+import { ProjectCard } from "@/components/project-card";
 import React from "react";
+
+const images = [
+  "/images/electrical-repairs.jpg",
+  "/images/fuel-dispenser-repairs.jpg",
+  "/images/fuel-dispenser.jpg",
+  "/images/hero.jpg",
+  "/images/surface-tank.jpg",
+  "/images/underground-pipes.jpg",
+];
 
 const ProjectsPage = () => {
   return (
@@ -29,13 +37,13 @@ const ProjectsPage = () => {
           <div className="space-y-5">
             <div className="flex flex-col md:flex-row gap-5">
               <ProjectCard
-                image="/images/electrical-repairs.jpg"
+                images={images}
                 heading="Electrical Works"
                 location="Goil Filling Station, Takoradi"
                 className="lg:flex-[3]"
               />
               <ProjectCard
-                image="/images/fuel-dispenser-repairs.jpg"
+                images={images}
                 heading="Fuel Dispenser Repairs"
                 location="Total Filling Station, Kasoa"
                 className="lg:flex-[2]"
@@ -44,13 +52,13 @@ const ProjectsPage = () => {
 
             <div className="flex flex-col md:flex-row gap-5">
               <ProjectCard
-                image="/images/fuel-dispenser.jpg"
+                images={images}
                 heading="Fuel Dispenser"
                 location="Pacific Filling Station, Cape Coast"
                 className="lg:flex-[2]"
               />
               <ProjectCard
-                image="/images/surface-tank.jpg"
+                images={images}
                 heading="Electrical Works"
                 location="Total Filling Station, Kasoa"
                 className="lg:flex-[3]"
@@ -59,13 +67,13 @@ const ProjectsPage = () => {
 
             <div className="flex flex-col md:flex-row gap-5">
               <ProjectCard
-                image="/images/underground-pipes.jpg"
+                images={images}
                 heading="Underground Pipes"
                 location="Total Filling Station, Kasoa"
                 className="lg:flex-[3]"
               />
               <ProjectCard
-                image="/images/hero.jpg"
+                images={images}
                 heading="Fuel Dispenser"
                 location="Total Filling Station, Kasoa"
                 className="lg:flex-[3]"
