@@ -1,5 +1,6 @@
 import Banner from "@/components/banner";
 import { HeadingTitle } from "@/components/heading-title";
+import { ProjectCard } from "@/components/ProjectCard";
 import Image from "next/image";
 import React from "react";
 
@@ -27,72 +28,48 @@ const ProjectsPage = () => {
           </div>
           <div className="space-y-5">
             <div className="flex flex-col md:flex-row gap-5">
-              <div className="relative rounded-2xl flex-1 lg:flex-[3] h-[460px] overflow-hidden group">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-                <div className="flex flex-col items-center justify-end pb-10 absolute inset-0 bg-gradient-to-t from-[#103b38] opacity-0 transform translate-y-20 group-hover:opacity-100 group-hover:translate-y-0 transition duration-500 cursor-pointer">
-                  <h4 className="text-4xl text-white">Electrical Repairs</h4>
-                  <p className="text-[#F7B550] uppercase text-lg font-semibold tracking-wider">
-                    Goil Filling Station, Takoradi
-                  </p>
-                </div>
-              </div>
-              <div className="rounded-2xl flex-1 lg:flex-[2] overflow-hidden">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ProjectCard
+                image="/images/electrical-repairs.jpg"
+                heading="Electrical Works"
+                location="Goil Filling Station, Takoradi"
+                className="lg:flex-[3]"
+              />
+              <ProjectCard
+                image="/images/fuel-dispenser-repairs.jpg"
+                heading="Fuel Dispenser Repairs"
+                location="Total Filling Station, Kasoa"
+                className="lg:flex-[2]"
+              />
             </div>
 
             <div className="flex flex-col md:flex-row gap-5">
-              <div className="rounded-2xl flex-1 lg:flex-[2] h-[460px] overflow-hidden">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="rounded-2xl flex-1 lg:flex-[3] overflow-hidden">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ProjectCard
+                image="/images/fuel-dispenser.jpg"
+                heading="Fuel Dispenser"
+                location="Pacific Filling Station, Cape Coast"
+                className="lg:flex-[2]"
+              />
+              <ProjectCard
+                image="/images/surface-tank.jpg"
+                heading="Electrical Works"
+                location="Total Filling Station, Kasoa"
+                className="lg:flex-[3]"
+              />
             </div>
 
             <div className="flex flex-col md:flex-row gap-5">
-              <div className="rounded-2xl flex-1 lg:flex-[3] h-[460px] overflow-hidden">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
-              <div className="rounded-2xl flex-1 lg:flex-[2] overflow-hidden">
-                <Image
-                  src="/images/hero.jpg"
-                  width="800"
-                  height={800}
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
+              <ProjectCard
+                image="/images/underground-pipes.jpg"
+                heading="Underground Pipes"
+                location="Total Filling Station, Kasoa"
+                className="lg:flex-[3]"
+              />
+              <ProjectCard
+                image="/images/hero.jpg"
+                heading="Fuel Dispenser"
+                location="Total Filling Station, Kasoa"
+                className="lg:flex-[3]"
+              />
             </div>
           </div>
         </div>
